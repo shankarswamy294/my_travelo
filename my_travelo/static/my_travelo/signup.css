@@ -1,0 +1,98 @@
+
+  form{
+  margin-top:50px;
+  margin-left:25%;
+  margin-right:25%;
+    text-align:center;
+
+
+  }
+#form1{
+margin:10%;
+text-align:center;
+}
+
+
+p{
+padding:20px;
+}
+
+hr{
+height:4px;
+background-color:black;
+border-radius:80px;
+}
+
+
+body{
+background-image: url("signupnew.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+#id_username{
+height:40px;
+background:transparent;
+border:2px solid black;
+border-radius:20px;
+padding:20px;
+}
+
+#id_username:active{
+outline:none;
+}
+
+#id_username:focus{
+outline:none;
+}
+
+#id_password1{
+height:40px;
+background:transparent;
+border:2px solid black;
+border-radius:20px;
+padding:20px;
+}
+
+#id_password1:active{
+outline:none;
+}
+
+#id_password1:focus{
+outline:none;
+}
+
+
+#id_password2{
+height:40px;
+background:transparent;
+border:2px solid black;
+border-radius:20px;
+padding:20px;
+}
+
+#id_password2:active{
+outline:none;
+}
+
+#id_password2:focus{
+outline:none;
+}
+
+#but{
+height:40px;
+width:100px;
+border:2px solid black;
+border-radius:20px;
+background:transparent;
+margin-top=-40px;
+}
+
+
+#but:active{
+outline:none;
+}
+
+#but:focus{
+outline:none;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        ul{
+            list-style:none;
+            padding-top:20px;
+        }
+
+        #post{
+            border:5px solid black;
+            border-radius:20px;
+            align:center;
+            background-color:#ffffff;
+            text-align:center;
+            margin: 5% 35% 5% 35%;
+            height: 450px;
+            width:450px;
+
+        }
+        #img{
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            width:800px;
+            height:350px;
+
+        }
+
+        #name{
+        padding-top:5px;
+        padding-left:10px;
+        text-align: left;
+        }
+        #desc{
+        padding-top:5px;
+        }
+        #like{
+            float:right;
+            padding-right:20px;
+            }
+
+    </style>
+</head>
+<body>
+{% extends 'my_travelo/base.html' %}
+{% block title%} Add a new Album {% endblock %}
+{% block album_active%}active{% endblock %}
+{% block body %}
+    <div id="container">
+        <ul>
+            {% for i in result %}
+            <div id="post" class="responsive">
+                <li><img src="{{ i.pic.url }}" class="img-responsive" id="img"></li>
+                <li id="like"><strong> <img src="https://static1.squarespace.com/static/57290f12859fd013740e7d7e/t/573b1e657c65e4d422bd9110/1463492203304/" width="30px" height="27px">
+                <li id="name"><strong>{{ i.name }} :</strong></li>
+
+                <li id="desc">{{ i.description }}</li>
+            </div>
+            {% endfor %}
+        </ul>
+    </div>
+{%endblock%}
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        ul{
+            list-style:none;
+            padding-top:20px;
+        }
+        #post{
+            border:5px solid black;
+            border-radius:20px;
+            align:center;
+            background-color:#ffffff;
+            text-align:center;
+            margin: 5% 35% 5% 35%;
+            height: 450px;
+            width:450px;
+
+        }
+        #img{
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            width:800px;
+            height:350px;
+
+        }
+
+        #name{
+        padding-top:5px;
+        padding-left:10px;
+        text-align: left;
+        }
+        #desc{
+        padding-top:5px;
+        }
+        #like{
+            float:right;
+            padding-right:20px;
+            padding-top:3px;
+            }
+            #heart{
+            float:right;
+            }
+        #delete{
+
+        float:right;
+        }
+        #update{
+        padding-top:4px;
+        float:right;
+        }
+        #update:active{
+                outline:none;
+                }
+
+        #update:focus{
+            outline:none;
+            }
+ #delete:active{
+                outline:none;
+                }
+
+        #delete:focus{
+            outline:none;
+            }
+ #heart:active{
+                outline:none;
+                }
+
+        #heart:focus{
+            outline:none;
+            }
+
+    </style>
+</head>
+<body>
+{% extends 'my_travelo/base.html' %}
+{% block title%} Add a new Album {% endblock %}
+{% block album_active%}active{% endblock %}
+{% block body %}
+    <div id="container">
+        <ul>
+            {% for i in result reversed %}
+            <div id="post" class="responsive" data-toggle="collapse">
+                <li><img src="{{ i.pic.url }}" class="img-responsive" id="img"></li>
+                <input type="image" id="heart" onclick="location.href='#';" src="https://static1.squarespace.com/static/57290f12859fd013740e7d7e/t/573b1e657c65e4d422bd9110/1463492203304/" width="35px" height="30px" alt="heart" >
+                <input type="image" id="delete" onclick="location.href='http://127.0.0.1:8000/travelo/delete/{{ i.id }}';" src="https://cdn0.iconfinder.com/data/icons/activities-glyph/2048/2164_-_Throwing_litter-512.png" width="40px" height="30px" alt="delete">
+                <input type="image" id="update" onclick="location.href='http://127.0.0.1:8000/travelo/update/{{ i.id }}';" src="https://cdn3.iconfinder.com/data/icons/rcons-file-action/512/update_file-512.png" width="30px" height="27px" alt="update" >
+
+                <li id="name"><strong>{{ i.name }} :</strong></li>
+                <li id="desc">{{ i.description }}</li>
+            </div>
+
+            <script>
+            $(document).ready(function(){
+                $("#img").dblclick(function(){
+                    $("#heart").attr("src","https://openclipart.org/image/800px/svg_to_png/145537/Simple-Red-Heart.png");
+                });
+            });
+            </script>
+
+            {% endfor %}
+        </ul>
+    </div>
+
+
+{%endblock%}
+</body>
+</html>

@@ -1,0 +1,85 @@
+
+            .pos{
+                position: relative;
+                top: 40px;
+
+            }
+
+            #but1{
+                height: 50px;
+                width: 100px;
+                border-style: solid;
+                background-color: transparent;
+                border-color: white;
+                color: white;
+                border-radius: 20px;
+                margin-right: 20px;
+
+            }
+
+            #but1:active{
+                outline:none;
+                }
+
+            #but1:focus{
+            outline:none;
+            }
+
+            #but2{
+                height: 50px;
+                width: 100px;
+                background-color: transparent;
+                border-style: solid;
+                border-color: white;
+                color: white;
+                border-radius: 20px;
+            }
+
+            #but2:active{
+                outline:none;
+                }
+
+            #but2:focus{
+            outline:none;
+            }
+
+            #but{
+                float: right;
+                margin-top: 40px;
+                margin-right: 60px;
+            }
+            body{
+                min-height:600px;
+                width:100%;
+                background:url("home.jpg") no-repeat;
+                background-width:100%;
+                background-size: cover;
+
+                }
+
+
+            #name{
+                color: white;
+                width: 200px;
+                height:100px;
+                text-align: center;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+
+            }
+
+            h1 {
+                font-family: cursive;
+                font-weight: bold;
+                color: #fff;
+                font-size: 100px;
+                position: absolute;
+                top:120px;
+                left: 150px;
+
+            }
+

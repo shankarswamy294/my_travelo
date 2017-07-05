@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% load staticfiles %}
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'my_travelo/home.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="">
+                <div class="">
+                    <div id="but">
+
+                          <input type="button"  onclick="location.href='http://127.0.0.1:8000/login';" id="but1" value="Login"/>
+                          <input type="button"  onclick="location.href='http://127.0.0.1:8000/signup';" id="but2" value="Signup"/>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="row row-centered pos">
+                <div class="col-lg-8 col-centered">
+                    <div id="name">
+                         <h1>TRAVELO</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script type="text/javascript">
+    $(document).ready(function(){
+        $("#but1").mouseover(function(){
+            $("#but1").css("background-color", "lightgray")
+        });
+    });
+
+    $(document).ready(function(){
+        $("#but1").mouseout(function(){
+            $("#but1").css("background-color", "transparent")
+        });
+    });
+
+$(document).ready(function(){
+        $("#but2").mouseover(function(){
+            $("#but2").css("background-color", "lightgray")
+        });
+    });
+
+    $(document).ready(function(){
+        $("#but2").mouseout(function(){
+            $("#but2").css("background-color", "transparent")
+        });
+    });
+
+</script>
+
+    </body>
+</html>
