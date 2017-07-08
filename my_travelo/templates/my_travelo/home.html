@@ -4,14 +4,14 @@
         {% load staticfiles %}
         <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="{% static 'my_travelo/home.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'my_travelo/home/home.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     </head>
     <body>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="">
                 <div class="">
                     <div id="but">
@@ -64,6 +64,29 @@ $(document).ready(function(){
     });
 
 </script>
+
+    <script>
+
+        $(function(){
+
+    var limit = 0; // 0 = infinite.
+    var interval = 2;// Secs
+    var images = [
+        "{% static 'my_travelo/home/home00.jpg' %}","{% static 'my_travelo/home/home01.jpg' %}","{% static 'my_travelo/home/home02.jpg' %}"
+    ];
+
+    var inde = 0;
+    var limitCount = 0;
+    var myInterval = setInterval(function() {
+           if (limit && limitCount >= limit-1) clearTimeout(myInterval);
+           if (inde >= images.length) inde = 0;
+           $('html').css({ "background-image":"url(" + images[inde]+ ")" });
+           inde++;
+           limitCount++;
+        }, interval*1200);
+});
+
+    </script>
 
     </body>
 </html>

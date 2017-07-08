@@ -1,19 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <title>Title</title>
+    {% load staticfiles %}
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'my_travelo/post.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
-     <form method="post" enctype="multipart/form-data">
+<div id="form_div">
+    <div id="head">
+        <h1><strong>CREATE POST</strong></h1>
+        <hr><br><br>
+    </div>
+       <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <table>
             {{form.as_table}}
         </table>
         <div id="button">
-        <input type ="submit" class="submit">
+        <input type ="submit" id="but" class="submit">
     </div>
     </form>
+</div>
 
-</body>
-</html>
+
+<script>
+      $(document).ready(function(){
+        $("#but").mouseover(function(){
+            $("#but").css("background-color", "lightgray")
+        });
+    });
+
+    $(document).ready(function(){
+        $("#but").mouseout(function(){
+            $("#but").css("background-color", "transparent")
+        });
+    });
+
+</script>
+</body></html>

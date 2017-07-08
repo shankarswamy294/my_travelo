@@ -1,0 +1,84 @@
+        #id_name{
+
+            height:40px;
+            width:212px;
+            border:2px solid black;
+            border-radius:30px;
+            padding-left:5%;
+            background:transparent;
+        }
+
+        #id_description{
+
+            height:40px;
+            border:2px solid black;
+            border-radius:30px;
+            padding-left:5%;
+            background:transparent;
+        }
+        #but{
+            margin-top:15px;
+            height:40px;
+            border:2px solid black;
+            border-radius:30px;
+            width:100px;
+            text-align:center;
+            background:transparent;
+            margin-left:35%;
+        }
+
+        #id_name:active{
+            outline: none;
+        }
+        #id_name:focus{
+            outline:none;
+            }
+
+        #id_description:active{
+            outline: none;
+        }
+        #id_description:focus{
+            outline:none;
+            }
+
+        #but:active{
+            outline: none;
+        }
+        #but:focus{
+            outline:none;
+            }
+
+        #form_div{
+            margin:15% 20% 5% 45%;
+        }
+
+        #profile_pic{
+            background-repeat: no-repeat;
+            background-position: 50%;
+            border:2px solid black;
+            border-radius: 50%;
+            width: 160px;
+            height: 160px;
+            margin-left:100%;
+            margin-down:20%;
+        }
+
+        #head{
+            text-align:center;
+        }
+
+        html{
+            background: url("profile.jpg") no-repeat;
+            background-size:cover;
+        }
+        body{
+        background:transparent;
+        }
+
+        hr{
+        border:2px solid black;
+        }
+
+        td{
+        padding:20px;
+        }

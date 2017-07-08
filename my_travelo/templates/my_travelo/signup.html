@@ -9,7 +9,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
+<nav>
+    <input type="button"  onclick="location.href='http://127.0.0.1:8000/home';" id="home" value="Home"/>
+</nav>
 
   <form method="post">
       <div id="form1">
@@ -31,4 +35,19 @@
     <button type="submit" id="but">Sign up</button>
           </div>
   </form>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#home").mouseover(function(){
+            $("#home").css("background-color", "white")
+        });
+    });
+
+    $(document).ready(function(){
+        $("#home").mouseout(function(){
+            $("#home").css("background-color", "transparent")
+        });
+    });
+</script>
 </body>
