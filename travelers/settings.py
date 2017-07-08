@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'my_travelo.apps.MyTraveloConfig',
-    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
