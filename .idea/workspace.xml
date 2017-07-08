@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="254d92ad-d7d4-4d73-a650-f1b6d87afd71" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myenv/Scripts/easy_install-2.7.exe" afterPath="$PROJECT_DIR$/myenv/Scripts/easy_install-2.7.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myenv/Scripts/easy_install.exe" afterPath="$PROJECT_DIR$/myenv/Scripts/easy_install.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myenv/Scripts/pip.exe" afterPath="$PROJECT_DIR$/myenv/Scripts/pip.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myenv/Scripts/pip2.7.exe" afterPath="$PROJECT_DIR$/myenv/Scripts/pip2.7.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myenv/Scripts/pip2.exe" afterPath="$PROJECT_DIR$/myenv/Scripts/pip2.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myenv/Scripts/wheel.exe" afterPath="$PROJECT_DIR$/myenv/Scripts/wheel.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_travelo/models.py" afterPath="$PROJECT_DIR$/my_travelo/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_travelo/templates/my_travelo/upload_form.html" afterPath="$PROJECT_DIR$/my_travelo/templates/my_travelo/upload_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_travelo/views.py" afterPath="$PROJECT_DIR$/my_travelo/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myenv/Lib/site-packages/pip-9.0.1.dist-info/RECORD" afterPath="$PROJECT_DIR$/myenv/Lib/site-packages/pip-9.0.1.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myenv/Lib/site-packages/setuptools-36.0.1.dist-info/RECORD" afterPath="$PROJECT_DIR$/myenv/Lib/site-packages/setuptools-36.0.1.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myenv/Lib/site-packages/wheel-0.29.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/myenv/Lib/site-packages/wheel-0.29.0.dist-info/RECORD" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/travelers/settings.py" afterPath="$PROJECT_DIR$/travelers/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/travelers/urls.py" afterPath="$PROJECT_DIR$/travelers/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/travelers/wsgi.py" afterPath="$PROJECT_DIR$/travelers/wsgi.py" />
     </list>
     <ignored path="travelers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -59,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/travelers/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+            <state relative-caret-position="-23">
+              <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -114,7 +100,7 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/travelers/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="272">
               <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
               <folding>
                 <element signature="e#643#675#0" expanded="true" />
@@ -135,7 +121,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -186,11 +172,11 @@
         <option value="$PROJECT_DIR$/my_travelo/models.py" />
         <option value="$PROJECT_DIR$/my_travelo/views.py" />
         <option value="$PROJECT_DIR$/my_travelo/templates/my_travelo/upload_form.html" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/travelers/settings.py" />
         <option value="$PROJECT_DIR$/travelers/wsgi.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/travelers/settings.py" />
       </list>
     </option>
   </component>
@@ -512,7 +498,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17113096" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -520,7 +506,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35188216" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.63502455" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -752,16 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/travelers/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding>
-            <element signature="e#643#675#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_travelo/templates/my_travelo/wall.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3162">
@@ -796,26 +772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="56" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/travelers/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -834,6 +794,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travelers/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding>
+            <element signature="e#643#675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/travelers/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
           <folding />
         </state>
       </provider>
