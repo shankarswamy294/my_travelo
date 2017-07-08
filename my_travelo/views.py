@@ -47,6 +47,8 @@ class Add_upload(LoginRequiredMixin,CreateView):
     model = Upload
     context_object_name = "all_upload"
     fields = ["pic","description","name"]
+
+
     success_url = "http://127.0.0.1:8000/travelo/wall"
 
 
