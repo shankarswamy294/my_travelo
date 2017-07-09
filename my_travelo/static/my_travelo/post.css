@@ -67,7 +67,11 @@
             text-align:center;
         }
 
-
+        html{
+            background: url("profile.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
         body{
         background:transparent;
         }
