@@ -161,7 +161,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'my_travelo/static')
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'my_travelo/static'),
+
 )
 
 
