@@ -43,16 +43,19 @@
             padding-right:20px;
             }
 
-
-
-
 body {
     font-family: "Lato", sans-serif;
-    transition: background-color .5s;
+
 }
 html{
-transition: background-color .5s;
+background-color:white;
 }
+
+#container-fluid{
+background-color:white;
+
+}
+
 
 .sidenav {
     height: 100%;
@@ -65,7 +68,7 @@ transition: background-color .5s;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    margin-top:70px;
+    marginx;
 }
 
 .sidenav a {
@@ -92,6 +95,7 @@ transition: background-color .5s;
 #main {
     transition: margin-left .5s;
     padding: 16px;
+
 }
 
 @media screen and (max-height: 450px) {
@@ -164,7 +168,6 @@ border: 2px solid white;
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     document.getElementById('openbtn').style.visibility = 'hidden';
 }
 
@@ -172,7 +175,7 @@ function closeNav() {
   document.getElementById('openbtn').style.visibility = 'visible';
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
+
 }
 
 
