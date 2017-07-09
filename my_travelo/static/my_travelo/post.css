@@ -68,7 +68,8 @@
         }
 
         html{
-            background: url("profile.jpg") no-repeat;
+            background: url("Profile.jpg");
+            background-repeat:no-repeat;
             background-size:cover;
         }
         body{
