@@ -66,10 +66,7 @@
             text-align:center;
         }
 
-        html{
-            background: url("profile.jpg") no-repeat;
-            background-size:cover;
-        }
+
         body{
         background:transparent;
         }
