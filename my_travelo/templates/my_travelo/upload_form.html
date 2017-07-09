@@ -71,7 +71,7 @@
         <hr><br><br>
     </div>
        <form method="post" enctype="multipart/form-data">
-        <input type="hidden" name="csrfmiddlewaretoken" value="UDRPmvkoIRtibxttXQtfro3SyxydioBOfFMAd7e8pJhqnrSLq2x0OEff2TgDeDxo">
+        {% csrf_token %}
         <table>
             <tbody><tr><th><label for="id_pic">Pic:</label></th><td><input id="id_pic" name="pic" type="file" required=""></td></tr>
 <tr><th><label for="id_description">Description:</label></th><td><input id="id_description" maxlength="300" name="description" type="text" required=""></td></tr>
