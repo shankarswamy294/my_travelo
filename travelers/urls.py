@@ -28,6 +28,7 @@ urlpatterns = [
     url(r'^travelo/',include('my_travelo.urls')),
     url(r'^login/$',auth_views.login,name='login'),
     url(r'^$',Home.as_view(),name='home'),
+    url(r'^home/$',Home.as_view(),name='home'),
     url(r'^signup/$', core_views.signup, name='signup'),
 ]
 

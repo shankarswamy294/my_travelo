@@ -31,7 +31,7 @@ def signup(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('http://127.0.0.1:8000/travelo/add_user/')
+            return redirect('{% travelo/add_user/ %}')
     else:
         form = UserCreationForm()
     return render(request, 'my_travelo/signup.html', {'form': form})
@@ -41,7 +41,7 @@ class Add_User(LoginRequiredMixin,CreateView):
     model = User
     context_object_name = "all_upload"
     fields = ["pic","name","location_from"]
-    success_url = "http://127.0.0.1:8000/travelo/wall"
+    success_url = "travelo/wall"
 
 class Add_upload(LoginRequiredMixin,CreateView):
     model = Upload
@@ -65,7 +65,7 @@ class Delete_upload(LoginRequiredMixin,DeleteView):
     model = Upload
     context_object_name = "all_upload"
     template_name = "my_travelo/upload_delete.html"
-    success_url = "http://127.0.0.1:8000/travelo/wall"
+    success_url = "travelo/wall"
 
 
 class Wall(LoginRequiredMixin,generic.ListView):
