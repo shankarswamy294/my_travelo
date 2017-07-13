@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #proimg{
+        border-radius:50%;
+    }
+.container{
+margin-top:3%;
+}
+</style>
+
+
+<body>
+<h1 style="text-align:center;">ALL USERS</h1>
+<hr>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>LOCATION_FROM</th>
+        <th>PIC</th>
+      </tr>
+    </thead>
+    <tbody>
+{% for i in result %}
+    <tr>
+        <td>{{ i.name }}</td>
+        <td>{{ i.location_from }}</td>
+        <td><img src="{{ i.pic.url }}" id="proimg" width="40px" height="40px"> </td>
+    </tr>
+{% endfor %}
+</tbody>
+      </table>
+    </div>
+</body>
+</html>

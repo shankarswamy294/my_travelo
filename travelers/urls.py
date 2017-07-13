@@ -30,6 +30,7 @@ urlpatterns = [
     url(r'^$',Home.as_view(),name='home'),
     url(r'^home/$',Home.as_view(),name='home'),
     url(r'^signup/$', core_views.signup, name='signup'),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
 
 

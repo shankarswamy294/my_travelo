@@ -31,7 +31,7 @@ def signup(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('{% travelo/add_user/ %}')
+            return redirect('/travelo/add_user')
     else:
         form = UserCreationForm()
     return render(request, 'my_travelo/signup.html', {'form': form})
@@ -41,15 +41,13 @@ class Add_User(LoginRequiredMixin,CreateView):
     model = User
     context_object_name = "all_upload"
     fields = ["pic","name","location_from"]
-    success_url = "travelo/wall"
+    success_url = "/travelo/wall"
 
-class Add_upload(LoginRequiredMixin,CreateView):
+class Add_upload(LoginRequiredMixin,CreateView,View):
     model = Upload
     context_object_name = "all_upload"
-    fields = ["pic","description","name"]
-
-
-    success_url = "http://127.0.0.1:8000/travelo/wall"
+    fields = ["pic", "description", "name"]
+    success_url = "/travelo/wall"
 
 
 class Update_upload(LoginRequiredMixin,UpdateView):
@@ -57,7 +55,7 @@ class Update_upload(LoginRequiredMixin,UpdateView):
     context_object_name = "all_upload"
     template_name = "my_travelo/upload_form.html"
     fields = ["pic","description","name"]
-    success_url = "http://127.0.0.1:8000/travelo/wall"
+    success_url = "/travelo/wall"
 
 
 
@@ -65,7 +63,7 @@ class Delete_upload(LoginRequiredMixin,DeleteView):
     model = Upload
     context_object_name = "all_upload"
     template_name = "my_travelo/upload_delete.html"
-    success_url = "travelo/wall"
+    success_url = "/travelo/wall"
 
 
 class Wall(LoginRequiredMixin,generic.ListView):
@@ -108,3 +106,35 @@ def my_view(request):
         'result': result,
     }
     return HttpResponse(template.render(context, request))
+
+
+
+
+
+from django.http import HttpResponse, JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.renderers import JSONRenderer
+from rest_framework.parsers import JSONParser
+from my_travelo.models import User,Upload
+from my_travelo.serializers import UserSerializer,UploadSerializer
+
+@csrf_exempt
+def User_list(request):
+    """
+    List all code snippets, or create a new snippet.
+    """
+    if request.method == 'GET':
+        result = User.objects.all()
+        template = loader.get_template('my_travelo/new.html')
+        context = {
+            'result': result
+        }
+        return HttpResponse(template.render(context, request))
+
+    elif request.method == 'POST':
+        data = JSONParser().parse(request)
+        serializer = UserSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data, status=201)
+        return JsonResponse(serializer.errors, status=400)
